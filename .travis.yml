@@ -19,4 +19,4 @@ deploy:
   github-token: '$token'
   keep-history: true
   provider: pages
-  local-dir: dist
+  local-dir: dist/chart
