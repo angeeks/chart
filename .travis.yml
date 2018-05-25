@@ -6,10 +6,10 @@ install:
   - npm i
 before_script:
   - npx ng lint @angeeks/chart
-  - npx ng test @angeeks/chart -- --sr
+  - npx ng test @angeeks/chart
   - npx ng build @angeeks/chart --prod
   - npm run lint
-  - npm run test -- --sr
+  - npm run test
   - npm run build
 cache:
     directories:
