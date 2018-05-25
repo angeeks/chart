@@ -10,7 +10,7 @@ before_script:
   - npx ng build @angeeks/chart --prod
   - npm run lint
   - npm run test
-  - npm run build
+  - npx ng build --prod
 cache:
     directories:
       - node_modules
