@@ -1,0 +1,21 @@
+{
+  "name": "@angeeks/chart",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "main": "bundles/angeeks-chart.umd.js",
+  "module": "fesm5/angeeks-chart.js",
+  "es2015": "fesm2015/angeeks-chart.js",
+  "esm5": "esm5/angeeks-chart.js",
+  "esm2015": "esm2015/angeeks-chart.js",
+  "fesm5": "fesm5/angeeks-chart.js",
+  "fesm2015": "fesm2015/angeeks-chart.js",
+  "typings": "angeeks-chart.d.ts",
+  "metadata": "angeeks-chart.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
