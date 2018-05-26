@@ -1,14 +1,16 @@
-<h1> Angular + Chart.js = ngk-chart </h1>
+# @angeeks/chart
 
-<h2> Installation </h2>
+Yet another chart.js wrapper for Angular
 
-<pre>
+## Installation
+
+```
   npm i -P @angeeks/chart
-</pre>
+```
 
-<h2> Module Setup </h2>
+## Module setup
 
-<pre>
+```
   # app.module.ts
   {{"
   import { ChartModule } from '@angeeks/chart';
@@ -21,12 +23,12 @@
   }
   export class AppModule {}
   "}}
-</pre>
+```
 
-<h2> Usage </h2>
+## Usage
 
-<pre>
-  {{ code }}
-</pre>
+```
+  <ngk-chart type='bar' [data]='data'></ngk-chart>
+```
 
-<ngk-chart [data]='data'></ngk-chart>
+[Demo](https://angeeks.github.io/chart/)

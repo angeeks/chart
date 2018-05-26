@@ -1,6 +1,20 @@
 {
   "name": "@angeeks/chart",
-  "version": "0.0.2",
+  "description": "Yet another chart.js wrapper for angular",
+  "version": "0.0.3",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "chart.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeeks/chart.git"
+  },
+  "homepage": "https://angeeks.github.io/chart",
+  "bugs": {
+    "url": "https://github.com/angeeks/chart/issues"
+  },
   "publishConfig": {
     "access": "public"
   },
