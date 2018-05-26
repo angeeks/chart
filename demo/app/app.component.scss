@@ -1,4 +1,9 @@
 :host {
+  pre {
+    border-radius: 3px;
+    background: #efefef;
+    padding: 10px;
+  }
   ngk-chart {
     display: block;
     width: 300px;

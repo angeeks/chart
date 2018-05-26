@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngk';
+  code = '<ngk-chart type="bar" [data]="data"></ngk-chart>';
   data = {
     labels: ['aa', 'bb', 'cc'],
     datasets: [{
