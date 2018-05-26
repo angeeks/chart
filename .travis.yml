@@ -19,6 +19,8 @@ deploy:
     github-token: $token
     skip-cleanup: true
     keep-history: true
+    on:
+      branch: master
   - provider: npm
     local-dir: dist/angeeks/chart
     email: speed.of.lightt@gmail.com
