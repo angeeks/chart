@@ -19,3 +19,8 @@ deploy:
     github-token: $token
     skip-cleanup: true
     keep-history: true
+notifications:
+  email:
+    - $notifyEmail
+  slack:
+    - secure: $slackToken
