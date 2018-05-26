@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ChartModule
+    ChartModule.forRoot()
   ],
   declarations: [
     AppComponent

@@ -1,5 +1,7 @@
 # Chart
 
+[![Build Status](https://travis-ci.org/angeeks/chart.svg?branch=master)](https://travis-ci.org/angeeks/chart)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
 ## Setup for ghpages

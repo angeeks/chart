@@ -1,10 +1,18 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { ChartComponent } from './chart.component';
+import { ChartWrapper } from './chart.wrapper';
 
 @NgModule({
-  imports: [
-  ],
   declarations: [ChartComponent],
   exports: [ChartComponent]
 })
-export class ChartModule { }
+export class ChartModule {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: ChartModule,
+      providers: [
+        ChartWrapper
+      ]
+    };
+  }
+}

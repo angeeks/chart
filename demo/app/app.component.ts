@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngk';
+  data = {
+    labels: ['aa', 'bb', 'cc'],
+    datasets: [{
+      data: [1, 2, 3]
+    }]
+  };
 }
