@@ -4,19 +4,26 @@ node_js:
     - "9.7.1"
 install:
   - npm i
-before_script:
-  - npx ng lint @angeeks/chart
-  - npx ng test @angeeks/chart
-  - npx ng build @angeeks/chart --prod
+script:
   - npx ng lint
-  - npx ng test
-  - npx ng build --prod --base-href chart
+  - npx ng test @angeeks/chart --watch=false
+  - npx ng build @angeeks/chart --prod
+  - npx ng test chart --watch=false
+  - npx ng build chart --prod --base-href chart
 cache:
     directories:
       - node_modules
 deploy:
-  skip-cleanup: true
-  github-token: '$token'
-  keep-history: true
-  provider: pages
-  local-dir: dist/chart
+  - provider: pages
+    local-dir: dist/chart
+    github-token: $token
+    skip-cleanup: true
+    keep-history: true
+  - provider: npm
+    local-dir: dist/angeeks/chart
+    email: speed.of.lightt@gmail.com
+    api_key: $npm
+    keep-history: true
+    tag: next
+    on:
+      branch: release

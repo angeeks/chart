@@ -37,7 +37,6 @@ export class ChartComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(e) {
-    let { data, options } = e;
     this.update();
   }
 
