@@ -8,9 +8,9 @@ before_script:
   - npx ng lint @angeeks/chart
   - npx ng test @angeeks/chart
   - npx ng build @angeeks/chart --prod
-  - npm run lint
-  - npm run test
-  - npx ng build --prod
+  - npx ng lint
+  - npx ng test
+  - npx ng build --prod --base-href chart
 cache:
     directories:
       - node_modules
