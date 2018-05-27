@@ -21,6 +21,6 @@ deploy:
     api_key: $npm
     skip_cleanup: true
     keep-history: true
-    tag: next
+    tag: latest
     on:
       branch: release
