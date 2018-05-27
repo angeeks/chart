@@ -14,6 +14,9 @@ cache:
     directories:
       - node_modules
 before_deploy:
+  - pwd
+  - ls
+  - cp README.md dist/angeeks/chart
   - cd dist/angeeks/chart
 deploy:
   - provider: npm
