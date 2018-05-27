@@ -13,12 +13,17 @@ script:
 cache:
     directories:
       - node_modules
+before_deploy:
+  - cd dist/angeeks/chart
 deploy:
-  - provider: pages
-    local-dir: dist/chart
-    github-token: $token
-    skip-cleanup: true
+  - provider: npm
+    email: $npmEmail
+    api_key: $npm
+    skip_cleanup: true
     keep-history: true
+    tag: latest
+    on:
+      branch: release
 notifications:
   email:
     - $notifyEmail
