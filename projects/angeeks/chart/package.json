@@ -1,7 +1,7 @@
 {
   "name": "@angeeks/chart",
   "description": "Yet another chart.js wrapper for angular",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "keywords": [
     "angular",

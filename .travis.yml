@@ -24,3 +24,8 @@ deploy:
     tag: latest
     on:
       branch: release
+notifications:
+  email:
+    - $notifyEmail
+  slack:
+    - secure: $slackToken
